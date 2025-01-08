@@ -86,6 +86,7 @@
       <div id="overlay"></div>
       <div id="event-form-container">
         <h2>Create a Volunteer Event</h2>
+        <h3>Events will show after review by admin.</h3>
         <form action="https://formspree.io/f/xvggvelz" method="POST" id="event-form">
           <input type="text" name="title" placeholder="Event Title" required />
           <input type="datetime-local" name="date_time" required />
@@ -94,7 +95,7 @@
           <input type="text" name="organizer_name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <input type="url" name="signup_link" placeholder="SignUpGenius Link" required />
-          <button type="submit">Create Event</button>
+          <button type="submit" onclick="createEvent()">Create Event</button>
         </form>
       </div>
     </div>

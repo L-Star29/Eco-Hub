@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Volunteer Networking</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Modak&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Inline styles for quick demonstration */
+      body {
+        background-image: url("8e893739b56490f071506c5da01691fb.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <center>
+        <div class="banner">
+          <img
+            src="ecologobigger.png"
+            class = "logo-image"
+          />
+          <a onclick="showFullMenu()"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="menu-alt" class="menu-icon" fill="#FFFFFF"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M21,19H3a1,1,0,0,1,0-2H21a1,1,0,0,1,0,2Z" style="fill:#FFFFFF"></path><path d="M21,13H3a1,1,0,0,1,0-2H21a1,1,0,0,1,0,2Z" style="fill:#FFFFFF"></path><path d="M21,7H3A1,1,0,0,1,3,5H21a1,1,0,0,1,0,2Z" style="fill:#FFFFFF"></path></g></svg></a>
+          <div class="link-group" id="the links">
+            <a href="index.html">
+              <p class="bannerp">Home</p>
+            </a>
+            <a href="volunteer.html">
+              <p class="bannerp">Volunteer Networking</p>
+            </a>
+            <a href="calculator.html">
+              <p class="bannerp">EC Calculator</p>
+            </a>
+            <a href="about-us.html">
+              <p class="bannerp">About Us</p>
+            </a>
+          </div>
+        </div>
+      </center>
+
+    <div class="content">
+      <h1 class="volunteertitle">Volunteer Networking Hub</h1>
+      <center>
+      <div>
+        <p style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; width: 600px; background-color: green; border-radius: 30px; padding: 20px; opacity: 80%;">
+          Find volunteer opportunities in your area and connect with other
+          eco-conscious individuals to make a difference in the world! Add volunteer
+          events using the button in the bottom right corner! You can join and attend
+          events other people have created by clicking the "Sign Up" button!
+        </p>
+      </div>
+      </center>
+
+      <!-- Event Display Section -->
+      <div id="events-container" class="events-grid">
+        <!-- Volunteer events will appear here dynamically -->
+      </div>
+
+      <!-- Floating Create Button -->
+      <button class="create-button" id="create-button">+</button>
+
+      <!-- Event Form Modal -->
+      <div id="overlay"></div>
+      <div id="event-form-container">
+        <h2>Create a Volunteer Event</h2>
+        <form action="https://formspree.io/f/xvggvelz" method="POST" id="event-form">
+          <input type="text" name="title" placeholder="Event Title" required />
+          <input type="datetime-local" name="date_time" required />
+          <input type="text" name="description" placeholder="Description" required />
+          <input type="text" name="location" placeholder="Location" required />
+          <input type="text" name="organizer_name" placeholder="Your Full Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="url" name="signup_link" placeholder="SignUpGenius Link" required />
+          <button type="submit">Create Event</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      // Open and close form modal
+      const createButton = document.getElementById('create-button');
+      const formContainer = document.getElementById('event-form-container');
+      const overlay = document.getElementById('overlay');
+
+      createButton.addEventListener('click', () => {
+        formContainer.style.display = 'block';
+        overlay.style.display = 'block';
+      });
+
+      overlay.addEventListener('click', () => {
+        formContainer.style.display = 'none';
+        overlay.style.display = 'none';
+      });
+
+      // Example function to display events (placeholder data for now)
+      function loadEvents() {
+        const events = [
+          {
+            title: 'Beach Cleanup',
+            date_time: '2024-01-15T10:00:00',
+            location: 'Sunny Beach',
+            organizer_name: 'John Doe',
+            email: 'john@example.com',
+            signup_link: 'https://www.signupgenius.com/example-link-1'
+          },
+          {
+            title: 'Tree Planting',
+            date_time: '2024-02-01T08:30:00',
+            location: 'City Park',
+            organizer_name: 'Jane Smith',
+            email: 'jane@example.com',
+            signup_link: 'https://www.signupgenius.com/example-link-2'
+          },
+        ];
+
+        const eventsContainer = document.getElementById('events-container');
+        eventsContainer.innerHTML = ''; // Clear the container
+
+        events.forEach(event => {
+          const eventBox = document.createElement('div');
+          eventBox.classList.add('event-box');
+
+          eventBox.innerHTML = `
+            <h3>${event.title}</h3>
+            <p><strong>Date:</strong> ${new Date(event.date_time).toLocaleString()}</p>
+            <p><strong>Location:</strong> ${event.location}</p>
+            <p><strong>Organizer:</strong> ${event.organizer_name}</p>
+            <button onclick="window.open('${event.signup_link}', '_blank')">Sign Up</button>
+          `;
+
+          eventsContainer.appendChild(eventBox);
+        });
+      }
+
+      // Load events on page load
+      document.addEventListener('DOMContentLoaded', loadEvents);
+    </script>
+  </body>
+</html>

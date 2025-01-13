@@ -109,11 +109,12 @@ h2 {
   }
   .banner {
     height: 50px;
+    width: 95%;
   }
   .logo-image {
     width: 65px;
     height: 65px;
-    margin-left: 0px;
+    margin-left: 25px;
   }
   .banner.full {
     width: 100%;
@@ -910,6 +911,12 @@ figcaption .caption-title {
   flex-direction: column;
   gap: 10px;
 }
+
+#event-form-container h2 {
+  font-size: 50px;
+  margin-bottom: 0px;
+}
+
 #overlay {
   display: none; /* Hidden by default */
   position: fixed;
@@ -919,6 +926,43 @@ figcaption .caption-title {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 999; 
+}
+
+.green-box-p {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 50%;
+  background-color: green;
+  border-radius: 30px;
+  padding: 20px;
+  opacity: 80%;
+}
+
+@media (min-width: 601px) {
+  .background-trees {
+    background-image: url("8e893739b56490f071506c5da01691fb.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+
+@media (max-width: 600px) {
+  body {
+    background-image: url();
+    background-color: white;
+  }
+  .volunteertitle {
+    text-shadow: none;
+    color: black;
+  }
+  .green-box-p {
+    width: 75%;
+  }
+  #event-form-container h2 {
+    font-size: 25px;
+  }
 }
 
 /*Button Styling*/

@@ -25,24 +25,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      /* Inline styles for quick demonstration */
-      body {
-        background-image: url("8e893739b56490f071506c5da01691fb.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-      }
-      
-    </style>
   </head>
-  <body>
+  <body class="background-trees">
     <center>
         <div class="banner">
-          <img
-            src="ecologobigger.png"
-            class = "logo-image"
-          />
+          <a href="index.html"><img src="ecologobigger.png" class="logo-image" /></a>
           <a onclick="showFullMenu()"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="menu-alt" class="menu-icon" fill="#FFFFFF"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M21,19H3a1,1,0,0,1,0-2H21a1,1,0,0,1,0,2Z" style="fill:#FFFFFF"></path><path d="M21,13H3a1,1,0,0,1,0-2H21a1,1,0,0,1,0,2Z" style="fill:#FFFFFF"></path><path d="M21,7H3A1,1,0,0,1,3,5H21a1,1,0,0,1,0,2Z" style="fill:#FFFFFF"></path></g></svg></a>
           <div class="link-group" id="the links">
             <a href="index.html">
@@ -65,7 +52,7 @@
       <h1 class="volunteertitle">Volunteer Networking Hub</h1>
       <center>
       <div>
-        <p style="color: white; font-family: Verdana, Geneva, Tahoma, sans-serif; width: 600px; background-color: green; border-radius: 30px; padding: 20px; opacity: 80%;">
+        <p class="green-box-p">
           Find volunteer opportunities in your area and connect with other
           eco-conscious individuals to make a difference in the world! Add volunteer
           events using the button in the bottom right corner! You can join and attend
@@ -94,7 +81,7 @@
           <input type="text" name="location" placeholder="Location" required />
           <input type="text" name="organizer_name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
-          <input type="url" name="signup_link" placeholder="SignUpGenius Link" required />
+          <input type="url" name="signup_link" placeholder="SignUp Link" required />
           <button type="submit" onclick="createEvent()">Create Event</button>
         </form>
       </div>

@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environmental Sustainability</title>
+  <script src="script.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Modak&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!--Banner-->
+  <center>
+    <div class="banner">
+      <a href="index.html"><img src="ecologobigger.png" class="logo-image" /></a>
+      <a onclick="showFullMenu()"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="menu-alt"
+          class="menu-icon" fill="#000000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="M21,19H3a1,1,0,0,1,0-2H21a1,1,0,0,1,0,2Z" style="fill:#FFFFFF"></path>
+            <path d="M21,13H3a1,1,0,0,1,0-2H21a1,1,0,0,1,0,2Z" style="fill:#FFFFFF"></path>
+            <path d="M21,7H3A1,1,0,0,1,3,5H21a1,1,0,0,1,0,2Z" style="fill:#FFFFFF"></path>
+          </g>
+        </svg></a>
+      <div class="link-group" id="the links">
+        <a href="index.html">
+          <p class="bannerp">Home</p>
+        </a>
+        <a href="volunteer.html">
+          <p class="bannerp">Volunteer Networking</p>
+        </a>
+        <a href="calculator.html">
+          <p class="bannerp">EC Calculator</p>
+        </a>
+        <a href="about-us.html">
+          <p class="bannerp">About Us</p>
+        </a>
+      </div>
+    </div>
+  </center>
+
+  <!--Header Section-->
+  <div class="title" id="page-start">
+    <img src="titlebg.jpg" id="title_image" />
+    <h1>Act Green, <span class="color-text">Live Clean</h1>
+    <a id="title-button" class="teal-button" href="#facts-start">
+      Know the Facts
+
+      <div class="icon">
+        <span>
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+            <path
+              d="M1.05403 31.6175C0.271626 32.3972 0.271626 33.6614 1.05403 34.441C1.83644 35.2207 3.10497 35.2207 3.88737 34.441L1.05403 31.6175ZM35.5599 2.05152C35.5599 0.948871 34.6629 0.0549994 33.5564 0.0549994L15.5251 0.0549994C14.4187 0.0549994 13.5217 0.948871 13.5217 2.05152C13.5217 3.15416 14.4187 4.04804 15.5251 4.04804H31.5529V20.0202C31.5529 21.1228 32.4499 22.0167 33.5564 22.0167C34.6629 22.0167 35.5599 21.1228 35.5599 20.0202L35.5599 2.05152ZM3.88737 34.441L34.9731 3.46327L32.1397 0.639766L1.05403 31.6175L3.88737 34.441Z"
+              fill="#f5a091" />
+          </svg>
+        </span>
+      </div>
+    </a>
+  </div>
+  <a class="small-anchor" id="facts-start"></a>
+
+  <!--Main Info - The Facts-->
+  <div class="info">
+    <img src="environmentalSustainability.jpg" />
+    <div class="infoText">
+      <svg aria-hidden="true" viewBox="0 0 418 42" class="underliner" preserveAspectRatio="none">
+        <path
+          d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
+        </path>
+      </svg>
+      <h2>What is it?</h2>
+      <p>
+        Environmental sustainability refers to the responsible management and
+        conservation of natural resources and ecosystems to meet current human
+        needs without compromising the ability of future generations to meet
+        their own needs. It emphasizes the balance between environmental,
+        social, and economic factors to ensure the long-term health of the
+        planet.
+      </p>
+      <a class="teal-button" href="#goals-start">
+        Go to Goals
+
+        <div class="icon">
+          <span>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" id="goals-start">
+              <path
+                d="M1.05403 31.6175C0.271626 32.3972 0.271626 33.6614 1.05403 34.441C1.83644 35.2207 3.10497 35.2207 3.88737 34.441L1.05403 31.6175ZM35.5599 2.05152C35.5599 0.948871 34.6629 0.0549994 33.5564 0.0549994L15.5251 0.0549994C14.4187 0.0549994 13.5217 0.948871 13.5217 2.05152C13.5217 3.15416 14.4187 4.04804 15.5251 4.04804H31.5529V20.0202C31.5529 21.1228 32.4499 22.0167 33.5564 22.0167C34.6629 22.0167 35.5599 21.1228 35.5599 20.0202L35.5599 2.05152ZM3.88737 34.441L34.9731 3.46327L32.1397 0.639766L1.05403 31.6175L3.88737 34.441Z"
+                fill="#f5a091" />
+            </svg>
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!--UN's Sustainable Dev Goals-->
+
+  <center>
+    <div class="goals_container">
+      <h2>UN's Sustainable Development Goals</h2>
+      <p class="sustaininfo">
+        The Sustainable Development Goals, created by the United Nations, are
+        a set of principles that aim to preserve peace and prosperity for
+        people and the planet. They serve as a framework for volunteers,
+        nonprofits, and other organizations to work towards a sustainable
+        future for our planet. Hover over the cards below to learn more!
+      </p>
+      <div class="goals">
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="1.png" alt="No Poverty" />
+              </div>
+              <div class="back" style="background-color: #e5243b">
+                <h4>No Poverty</h4>
+                <p class="goaltext">
+                  End poverty in all its forms worldwide. Ensure
+                  <u>everyone</u> has access to basic needs and economic
+                  opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="2.png" alt="Zero Hunger" />
+              </div>
+              <div class="back" style="background-color: #dda63a">
+                <h4>No Poverty</h4>
+                <p class="goaltext">
+                  Aims to end malnutrition by ensuring everyone has access to
+                  safe, sufficent, and nutritious food.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="3.png" alt="Good Health and Well-being" />
+              </div>
+              <div class="back" style="background-color: #4c9f38">
+                <h4>Good Health</h4>
+                <p class="goaltext">
+                  Ensure healthy lives and promote well-being for everyone at all ages, focusing on reducing diseases
+                  and improving healthcare access.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="4.png" alt="Quality Education" />
+              </div>
+              <div class="back" style="background-color: #c5192d">
+                <h4>Quality Education</h4>
+                <p class="goaltext">
+                  Provide inclusive and equitable quality education, ensuring lifelong learning opportunities for all.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="5.png" alt="Gender Equality" />
+              </div>
+              <div class="back" style="background-color: #ff3a21">
+                <h4>Gender Equality</h4>
+                <p class="goaltext">
+                  Achieve gender equality and empower all women and girs, ending discrimination and violence against
+                  them.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="6.png" alt="Clean Water and Sanitation" />
+              </div>
+              <div class="back" style="background-color: #26bde2">
+                <h4>Clean Water</h4>
+                <p class="goaltext">
+                  Ensure availability and sustainable management of water and sanitation for everyone.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="7.png" alt="Affordable and Clean Energy" />
+              </div>
+              <div class="back" style="background-color: #fcc30b">
+                <h4>Affordable Clean Energy</h4>
+                <p class="goaltext">
+                  Expand access to affordable, reliable, and modern energy, focusing on renewable sources. Improve
+                  energy efficency.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="8.png" alt="Decent Work and Economic Growth" />
+              </div>
+              <div class="back" style="background-color: #a21942">
+                <h4>Decent Work</h4>
+                <p class="goaltext">
+                  Promote inclusive and sustainable economic growth, employment, and decent work for all. It strives to
+                  create job opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="9.png" alt="Industry, Innovation, and Infrstructure" />
+              </div>
+              <div class="back" style="background-color: #fd6925">
+                <h4>Triple I</h4>
+                <p class="goaltext">
+                  Build resilient infrastructure, promote inclusive and sustainable industrialization, and foster
+                  innovation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="10.png" alt="Reduced Inequalities" />
+              </div>
+              <div class="back" style="background-color: #dd1367">
+                <h4>Reduced Inequalities</h4>
+                <p class="goaltext">
+                  Reduce inequality within and among countries. It seeks to improve economic and social inclusion for
+                  all, regardless of age, gender, race, disability, etc.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="11.png" alt="Sustainable Cities and Communities" />
+              </div>
+              <div class="back" style="background-color: #fd9d24">
+                <h4>Sustainable Cities</h4>
+                <p class="goaltext">
+                  Make cities and human settlements inclusive, safe, resilient, and sustainable. This goal promotes
+                  sustainable urbanization, affordable housing, etc.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="12.png" alt="Responsible Consumption and Production" />
+              </div>
+              <div class="back" style="background-color: #bf8b2e">
+                <h4>Responsible Consumption</h4>
+                <p class="goaltext">
+                  Ensure sustainable consumption and production patterns aiming to reduce waste.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="13.png" alt="Climate Action" />
+              </div>
+              <div class="back" style="background-color: #3f7e44">
+                <h4>Climate Action</h4>
+                <p class="goaltext">
+                  Take urgent action to combat climate change and its impacts. This goal focuses on reducing greenhouse
+                  gas emissions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="14.png" alt="Life Below Water" />
+              </div>
+              <div class="back" style="background-color: #0a97d9">
+                <h4>Life Below Water</h4>
+                <p class="goaltext">
+                  Conserve and sustainably use the oceans, seas, and marine resources for sustainable development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="15.png" alt="Life On Land" />
+              </div>
+              <div class="back" style="background-color: #56c02b">
+                <h4>Life on Land</h4>
+                <p class="goaltext">
+                  Protect, restore, and promote the sustainable use of terrestrial ecosystems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="16.png" alt="Peace, Justice, and Strong Institutions" />
+              </div>
+              <div class="back" style="background-color: #00689d">
+                <h4>Peace, Justice</h4>
+                <p class="goaltext">
+                  Promote peaceful and inclusive societies for sustainable development, provide access to justice for
+                  all, and build effective, accountable institutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame">
+          <div class="shape">
+            <div class="card">
+              <div class="front">
+                <img src="17.png" alt="Partnership For The Goals" />
+              </div>
+              <div class="back" style="background-color: #19486a">
+                <h4>Partnership</h4>
+                <p class="goaltext">
+                  Strengthen the means of implementation and revitalize the global partnership for sustainable
+                  development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </center>
+
+  <!--Our Vision and Our Mission-->
+  <div class="vision">
+    <img src="binoculars.png" />
+    <div class="visionText">
+      <svg aria-hidden="true" viewBox="0 0 418 42" preserveAspectRatio="none" class="underliner">
+        <path
+          d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
+        </path>
+      </svg>
+      <h2>Our Vision</h2>
+      <p>
+        Address the lack of opportunities for the average person to learn
+        about environmental sustainability and how they can help the
+        environment.
+      </p>
+    </div>
+  </div>
+  <div class="mission">
+    <img src="mission.png" />
+    <div class="missionText">
+      <svg aria-hidden="true" viewBox="0 0 418 42" preserveAspectRatio="none" class="underliner">
+        <path
+          d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
+        </path>
+      </svg>
+      <h2>Our Mission</h2>
+      <p>
+        Provide a platform for people to learn about how they use natural
+        resources in their daily lives and how they can aid environmental
+        activism.
+      </p>
+    </div>
+  </div>
+
+  <!--Some statistics to show credibility-->
+  <div class="stats">
+    <div class="background-overlay"></div>
+    <div class="stats-content">
+      <h2>Impact in <span class="numbers">Numbers.</span></h2>
+      <div class="stats-container">
+        <div class="stat-column">
+          <h3>10+</h3>
+          <p>Events Added</p>
+        </div>
+        <div class="stat-column">
+          <h3>50</h3>
+          <p>Web Engagements</p>
+        </div>
+        <div class="stat-column">
+          <h3>100+</h3>
+          <p>Event Sign-Ups</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Testimonials-->
+
+  <div class="testimonials">
+    <div class="testimonial-container">
+      <h2>Words of Wisdom.</h2>
+      <div class="testimonials-content">
+        <figure class="testimonial quote-1">
+          <svg aria-hidden="true" width="105" height="78" class="quote">
+            <path
+              d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+            </path>
+          </svg>
+          <blockquote>
+            <p>
+              We are really excited to see what you guys are doing. I had a
+              similar vision when creating EcoEats and I hope that you guys
+              follow through and continue to help the environment by raising
+              awarness and educating people about the importance of
+              environmental sustainability.
+            </p>
+          </blockquote>
+          <figcaption>
+            <div class="caption-text">
+              <div class="caption-name">Pranav Konjeti</div>
+              <div class="caption-title">Founder of <span><a href="https://www.ecoeats.us/">EcoEeats</a></span></div>
+            </div>
+            <div class="caption-image"></div>
+          </figcaption>
+        </figure>
+        <figure class="testimonial quote-2">
+          <svg aria-hidden="true" width="105" height="78" class="quote">
+            <path
+              d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+            </path>
+          </svg>
+          <blockquote>
+            <p>
+              As a strong advocate for sustainability, I am truly grateful for what you guys have done. This website has
+              allowed me to navigate volunteering experiences and perform this service. I hope to stick around for this
+              journey and exploring environmental awarness and take action.
+            </p>
+          </blockquote>
+          <figcaption>
+            <div class="caption-text">
+              <div class="caption-name">Sam P.</div>
+              <div class="caption-title">Active User of Eco-Hub</div>
+            </div>
+            <div class="caption-image"></div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!--Call to Action-->
+
+  <div class="action-call">
+    <div class="covered-image"></div>
+    <div class="color-overlay"></div>
+    <div class="action-content">
+      <h2>Time to Take Action.</h2>
+      <div class="text-container">
+        <p>Do you want to make the world a better place? Take a look at our Volunteer Networking and participate in the
+          action! Or use the EC Calculator to see how you make improvevements individually! </p>
+      </div>
+    </div>
+    <div class="action-buttons">
+      <a id="tohub-button" class="teal-button" href="volunteer.html">
+        Volunteer
+
+        <div class="icon">
+          <span>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <path
+                d="M1.05403 31.6175C0.271626 32.3972 0.271626 33.6614 1.05403 34.441C1.83644 35.2207 3.10497 35.2207 3.88737 34.441L1.05403 31.6175ZM35.5599 2.05152C35.5599 0.948871 34.6629 0.0549994 33.5564 0.0549994L15.5251 0.0549994C14.4187 0.0549994 13.5217 0.948871 13.5217 2.05152C13.5217 3.15416 14.4187 4.04804 15.5251 4.04804H31.5529V20.0202C31.5529 21.1228 32.4499 22.0167 33.5564 22.0167C34.6629 22.0167 35.5599 21.1228 35.5599 20.0202L35.5599 2.05152ZM3.88737 34.441L34.9731 3.46327L32.1397 0.639766L1.05403 31.6175L3.88737 34.441Z"
+                fill="#f5a091" />
+            </svg>
+          </span>
+        </div>
+      </a>
+      <a id="tocalc-button" class="teal-button" href="calculator.html">
+        EC Calculator
+
+        <div class="icon">
+          <span>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+              <path
+                d="M1.05403 31.6175C0.271626 32.3972 0.271626 33.6614 1.05403 34.441C1.83644 35.2207 3.10497 35.2207 3.88737 34.441L1.05403 31.6175ZM35.5599 2.05152C35.5599 0.948871 34.6629 0.0549994 33.5564 0.0549994L15.5251 0.0549994C14.4187 0.0549994 13.5217 0.948871 13.5217 2.05152C13.5217 3.15416 14.4187 4.04804 15.5251 4.04804H31.5529V20.0202C31.5529 21.1228 32.4499 22.0167 33.5564 22.0167C34.6629 22.0167 35.5599 21.1228 35.5599 20.0202L35.5599 2.05152ZM3.88737 34.441L34.9731 3.46327L32.1397 0.639766L1.05403 31.6175L3.88737 34.441Z"
+                fill="#f5a091" />
+            </svg>
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="logo-content">
+      <img src="ecologobigger.png" style="
+            width: 75px;
+            height: 75px;
+            margin-right: 100px;
+            border-radius: 50%;
+            background-color: darkblue;
+            box-shadow:
+              0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          " />
+    </div>
+    <div style="display: flex; flex-direction: column">
+      <p><b>Pages</b></p>
+      <a href="index.html">Home</a>
+      <a href="volunteer.html">Volunteer Networking</a>
+      <a href="calculator.html">EC Calculator</a>
+      <a href="about-us.html">About Us</a>
+    </div>
+    <div class="developed-by">
+      <p><b>Developed By</b></p>
+      <a href="about-us.html#lokesh">Lokesh Rajagopal</a>
+      <a href="about-us.html#eshwar">Eshwar Bejugam</a>
+    </div>
+    <div class="top-icon"><a href="#page-start"><svg fill="#100f89" width="64px" height="64px" viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg" stroke="#100f89">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <title>ionicons-v5-b</title>
+            <path
+              d="M256,48C141.13,48,48,141.13,48,256s93.13,208,208,208,208-93.13,208-208S370.87,48,256,48Zm74.14,252H181.86a16,16,0,0,1-12.29-26.23l74.13-89.09a16,16,0,0,1,24.6,0l74.13,89.09A16,16,0,0,1,330.14,300Z">
+            </path>
+          </g>
+        </svg> </a></div>
+  </div>
+
+</body>
+
+</html>

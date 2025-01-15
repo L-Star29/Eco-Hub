@@ -50,11 +50,15 @@ function calculateConsumption() {
   if (watts && hours && days && rate) {
     const kWh = (watts / 1000) * hours * days;
     const cost = kWh * rate;
+    const coal = 1.14 * kWh;
 
-    document.getElementById("total").innerHTML = `${kWh.toFixed(2)}
+    document.getElementById("total").innerHTML = `${kWh.toFixed(2)} kWh
       `;
 
-    document.getElementById("cost").innerHTML = `${cost.toFixed(2)}
+    document.getElementById("cost").innerHTML = `$${cost.toFixed(2)}
+      `;
+
+    document.getElementById("coals").innerHTML = `${coal.toFixed(2)} lbs
       `;
   } else {
     alert("Please fill in all fields.");
